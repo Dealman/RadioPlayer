@@ -11,7 +11,7 @@
         Title="Radio Player" Height="700" Width="1200" ContentRendered="MetroWindow_ContentRendered" TitleCharacterCasing="Normal" WindowStartupLocation="CenterScreen">
     <mah:MetroWindow.RightWindowCommands>
         <mah:WindowCommands>
-            <Button>
+            <Button x:Name="GitHubButton" Click="GitHubButton_Click">
                 <StackPanel Orientation="Horizontal">
                     <fa5:ImageAwesome Margin="4,0,0,0" Width="24" Height="24" Icon="Brands_Github" Foreground="{DynamicResource MahApps.Brushes.ThemeForeground}"/>
                     <TextBlock Margin="4 0 0 0" VerticalAlignment="Center" Text="GitHub" Foreground="{DynamicResource MahApps.Brushes.ThemeForeground}"/>

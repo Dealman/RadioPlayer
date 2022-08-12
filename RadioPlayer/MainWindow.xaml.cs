@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Globalization;
 using RadioPlayer.RadioBrowser;
 using System.Windows;
+using System.Diagnostics;
 
 namespace RadioPlayer
 {
@@ -94,6 +95,11 @@ namespace RadioPlayer
         public void ResetWindowTitle()
         {
             Title = "Radio Player";
+        }
+
+        private void GitHubButton_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("explorer", "https://github.com/Dealman/RadioPlayer");
         }
     }
 }
